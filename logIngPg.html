@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a fuentes de Google (fuentes que usamos en toda la página)-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Questrial&display=swap"
+        rel="stylesheet">
+
+        <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="./assets/CSS/logInPgStyle.css">
+
+    <!-- Icono de la pestaña -->
+    <link rel="icon" href="./assets/img/logo.png">
+
+     <!-- Script para funcionalidades de la página, cargado despues de la pagina haya cargado -->
+    <script src="./assets/JS/registroCompraScript.js" defer></script>
+
+    <title>Log In</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div id="logMenu"><!-- Contenido principal de la página (ingreso de datos) -->
+            <img id="logMenBtn" src="./assets/img/lista.png" alt="menu" > <!-- Icono para el Menú de navegación -->
+            <img id="logMenBtnAlt" src="./assets/img/lista (1).png" alt="menu" style="display: none;"> <!-- Icono alternativo -->
+            <div id="menuContent" style="display: none;">
+                <ul>
+                    <li><a href="./index.html">Página Principal</a></li> <!-- Enlace a la página principal -->
+                    <li><a href="./index.html#Danzas">Danzas</a></li> <!-- Enlace a la sección de danzas -->
+                    <li><a href="./apartadoVenta.html">Comprar</a></li><!-- Enlace a la sección de venta -->
+                </ul>
+            </div>
+        </div>
+
+        <div id="logTitulo">
+            <h1> Log In </h1><!-- Título de la página de inicio de sesión -->
+        </div>
+
+        <div id="logForms"> <!-- Contenedor para el formulario de inicio de sesión -->
+            <form>
+
+                <label for="loginName"> <h2> Nombre </h2> </label>
+                <input type="text" name="loginName" id="loginName">
+
+                <label for="loginCorreoEl"> <h2> Correo Electronico </h2> </label>
+                <input type="email" name="loginCorreoEl" id="loginCorreoEl">
+
+                <label for="loginPassword"> <h2> Contraseña </h2> </label>
+                <input type="password" name="loginPassword" id="loginPassword">
+                
+                <button id="btnRegistro" type="button">Registrarse</button> <!-- Botón para registrarse -->
+        </div>
+
+    </main>
+
+
+    <aside><!-- Sección lateral -->
+        <div id="logOso"> <img src="./assets/img/logInOso.png" alt="logoOso"> </div>  <!-- Imagen logo -->
+
+        <div id="logConfeti"> <img src="./assets/img/logConfetti.jpg" alt="fondoConfeti"> </div>
+
+    </aside>
+
+
+
+
+
+
+
+</body>
+
+</html>

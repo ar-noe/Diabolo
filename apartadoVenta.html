@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Questrial&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+        <!--uso de scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./assets/JS/dropMenu.js" defer></script>
+    <script src="./assets/JS/ventaProdEsp.js" defer></script>
+
+<!--uso de estilos-->
+    <link rel="stylesheet" href="./assets/CSS/apartadoVentaStyle.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>Trajes</title>
+</head>
+
+<body>
+    <header class="enca"> <!--menu interactivo-->
+        <div class="men"> <img id="ImgLgMenu" src="./assets/img/lista (1).png" alt="&#9776;"> </div>
+        <div class="titu">Diabolo</div>
+    </header>
+
+    <nav id="menu" class="menu-lateral" style="display: none;"> <!-- Ocultar el menú por defecto -->
+        <ul>
+            <li><a href="./index.html#Festividades">Festividades</a></li>
+            <li><a href="./index.html#Danzas">Danzas</a></li>
+            <li><a href="./apartadoVenta.html">Comprar</a></li>
+        </ul>
+    </nav>
+
+
+    <aside>
+        <nav id="DeptosNav"> <!--indice de las danzas-->
+            <ul>
+                <li> <a href="#Morenada">Morenada</a> </li>
+                <li> <a href="#Caporales">Caporales</a> </li>
+                <li> <a href="#Diablada">Diablada</a> </li>
+                <li> <a href="#Tobas">Tobas</a> </li>
+                <li> <a href="#Kullawada">Kullawada</a> </li>
+                <li> <a href="#Tinku">Tinku</a> </li>
+                <li> <a href="#WakaWaka">Waka Waka</a> </li>
+                <li> <a href="#Saya">Saya</a> </li>
+                <li> <a href="#Pujllay">Pujllay</a> </li>
+                <li> <a href="#Llamerada">Llamerada</a> </li>
+                <li> <a href="#Taquirari">Taquirari</a> </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+<!--tarjetasde productos-->
+        <div id="Morenada" class="depOrder">
+            <h2 class="subtDanzas">Morenada</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Morenada01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Máscara de Moreno con careta metálica</h3>
+                        <p>Precio: Bs 550</p>
+                        <button id="btnM1">  Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Morenada02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Pollerín o faldilla de moreno</h3>
+                        <p>Precio: Bs 300 </p>
+                        <button id="btnM2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Caporales" class="depOrder">
+            <h2 class="subtDanzas">Caporales</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Caporales01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Botas altas con cascabeles</h3>
+                        <p>Precio: Bs 480 </p>
+                        <button id="btnCap1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/CAporales02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Camisa bordada de caporal</h3>
+                        <p>Precio: Bs 270</p>
+                        <button id="btnCap2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Diablada" class="depOrder">
+            <h2 class="subtDanzas">Diablada</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Diablada01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Máscara de Diablo Rey</h3>
+                        <p>Precio: Bs 700</p>
+                        <button id="btnDiab1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Diablada02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Traje bordado con pedrería y escamas metálicas diablada</h3>
+                        <p>Precio: Bs 900</p>
+                        <button id="btnDiab2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Tobas" class="depOrder">
+            <h2 class="subtDanzas">Tobas</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Tobas01.jpg" alt="danzaTraje">
+                    <div>
+                        <h3>Penacho de plumas largas multicolores</h3>
+                        <p>Precio: Bs 180</p>
+                        <button id="btnTb1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Tobas02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Brazaletes y tobilleras con plumas</h3>
+                        <p>Precio: Bs 100 (par)</p>
+                        <button id="btnTb2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Kullawada" class="depOrder">
+            <h2 class="subtDanzas">Kullawada</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Kullawada01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Chaleco bordado con figuras textiles</h3>
+                        <p>Precio: Bs 320</p>
+                        <button id="btnKw1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Kullawada02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Traje de Kullawada Mujer</h3>
+                        <p>Precio: Bs 700</p>
+                        <button id="btnKw2">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Tinku" class="depOrder">
+            <h2 class="subtDanzas">Tinku</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Tinku01.jpg" alt="danzaTraje">
+                    <div>
+                        <h3>Montera con plumas y cintas</h3>
+                        <p>Precio: Bs 150</p>
+                        <button id="btnTk1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Tinku02.jpg" alt="danzaTraje">
+                    <div>
+                        <h3>Faja ancha con diseños andinos (chumpi)</h3>
+                        <p>Precio: Bs 100 </p>
+                        <button id="btnTk2">  Comprar  </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="WakaWaka" class="depOrder">
+            <h2 class="subtDanzas">Waka Waka</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/WakaWaka01.jpg" alt="danzaTraje">
+                    <div>
+                        <h3>Máscara de toro Waka Waka</h3>
+                        <p>Precio: Bs 200</p>
+                        <button id="btnWk1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/WakaWaka02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Faldellín corto con campanillas</h3>
+                        <p>Precio: Bs 180</p>
+                        <button id="btnWk2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Saya" class="depOrder">
+            <h2 class="subtDanzas">Saya</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Saya01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Falda corta con vuelo y bordados afroandinos</h3>
+                        <p>Precio: Bs 180</p>
+                        <button id="btnS1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Saya02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Sombrero Tradicional</h3>
+                        <p>Precio: Bs 60 </p>
+                        <button id="btnS2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Pujllay" class="depOrder">
+            <h2 class="subtDanzas">Pujllay</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Pujllay01.jpg" alt="danzaTraje">
+                    <div>
+                        <h3>Montera con flores y cintas</h3>
+                        <p>Precio: Bs 220</p>
+                        <button id="btnPj1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Pujllay02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Chaqueta corta bordada</h3>
+                        <p>Precio: Bs 400</p>
+                        <button id="btnPj2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Llamerada" class="depOrder">
+            <h2 class="subtDanzas">Llamerada</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Llamerada01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Chaleco con motivos de llamas</h3>
+                        <p>Precio: Bs 310</p>
+                        <button id="btnLm1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Llamerada02.jpg" alt="danzaTraje">
+                    <div>
+                        <h3>Sombrero decorado con espejos y pompones</h3>
+                        <p>Precio: Bs 130</p>
+                        <button id="btnLm2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Taquirari" class="depOrder">
+            <h2 class="subtDanzas">Taquirari</h2>
+            <div class="danzaSec">
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Taquirari01.png" alt="danzaTraje">
+                    <div>
+                        <h3>Vestido de dama camba con vuelos y flores</h3>
+                        <p>Precio: Bs 160</p>
+                        <button id="btnTq1"> Comprar </button>
+                    </div>
+                </div>
+                <div class="danzaEspecifica">
+                    <img src="./assets/img/Productos/Taquirari02.png" alt="danzaTraje">
+                    <div>
+                        <h3>Sombrero de paja tipo camba</h3>
+                        <p>Precio: Bs 90</p>
+                        <button id="btnTq2"> Comprar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="./assets/JS/dropMenu.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+/*estilos generales*/
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f5f5f0;
+}
+
+/*estilo para el header*/
+.enca{
+  background-color: #507f52;
+  color:white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+}
+#imgMargin{
+  position: absolute;
+  width: 300px;
+  left:400px;
+}
+/*estilo para el menu interactivo*/
+.men{
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.titu{
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+.con{
+  display:flex;
+  padding: 85px;
+  background-color: #f0f0df;
+  justify-content: left;
+  
+}
+.col{
+  flex: 5 5 auto;
+  text-align: center;
+  width: 100%;
+}
+.oso{
+  width: 100%;
+height: auto;
+margin: 60px;
+}
+.clu h1{
+  color: #507f52;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 60px;
+}
+.menu-lateral {
+  width: 250px;
+  height: 100%;
+  background-color: #507f52;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.menu-lateral.abierto {
+  left: 0;
+}
+
+/*estilo para los rectangulos de las danzas*/
+.danza-section {
+padding: 2rem;
+text-align: center;
+}
+.titulo-seccion {
+color: #e4b400;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+border-bottom: 2px solid #e4b400;
+display: inline-block;
+padding-bottom: 0.5rem;
+}
+.tarjeta-danza {
+background-color: #dde6d4;
+border-radius: 1rem;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: 1rem;
+}
+.info-danza {
+text-align: left;
+max-width: 60%;
+}
+.info-danza h3 {
+color: #3e5b40;
+font-size: 1.8rem;
+margin-bottom: 0.5rem;
+}
+.descripcion {
+color: #f4a300;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+.boton-mas {
+background-color: #d4cd95;
+border: none;
+padding: 0.5rem 1.2rem;
+border-radius: 1rem;
+font-weight: bold;
+cursor: pointer;
+color: #3e5b40;
+transition: background 0.3s;
+}
+.boton-mas:hover {
+background-color: #c7c07f;
+}
+.imagen-danza {
+width: 150px;
+height: auto;
+border-radius: 0.5rem;
+}
+.banner {
+background-color: #7e9084;
+padding: 40px 20px;
+text-align: center;
+}
+
+/*apartado de las festividades*/
+#Festividades
+{
+  background-color: #7e9084;
+}
+#Danzas{
+  
+  margin: 0 10%;
+}
+
+.banner h1 {
+margin: 0;
+font-size: 2rem;
+color: #f5c542;
+text-transform: uppercase;
+border-bottom: 2px solid #f5c542;
+display: inline-block;
+padding-bottom: 8px;
+}
+.cards-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+padding: 40px 20px;
+}
+.card {
+background: #fff;
+width: 300px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+border-radius: 6px;
+overflow: hidden;
+transition: transform 0.3s, box-shadow 0.3s;
+cursor: pointer;
+}
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.card img {
+  margin: 5%;
+width: 90%;
+height: 200px;
+object-fit: cover;
+}
+.titulo {
+padding: 16px;
+font-size: 1.1rem;
+color: #d38c14;
+text-align: center;
+text-transform: capitalize;
+} 
+/*estilos genrales*/
+h1{
+  color: #F3C623;
+  font-family: 'Poppins', sans-serif;
+  height: 10vh;
+  margin: 0;
+  font-weight: bold;
+}
+h2{
+  color: #F3C623;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+.depOrder{
+  margin: 3%;
+}
+
+h2{
+   color: #F3C623;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+p{
+  font-family: 'Questrial', sans-serif; 
+}
+button{
+  background-color: #D2D0A0;
+  color: #537D5D;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+men img{
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    left: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: #D2D0A0;
+}
+#menu ul li a:hover{
+    color: #F3C623;
+}
+#menu ul{
+    list-style-type: none;
+
+}
+#menu{
+    padding: 30px 0;
+}
+
+#imgMargin{
+    margin: 0;
+     position: absolute;
+    top: 75vh;
+    left: 55%;
+    height: 15vh;
+    width: 45%;
+}
+
+#menu {
+    display: none; /* Ocultar el menú por defecto */
+    padding-left: 300px;
+    position: absolute;
+    z-index: 10;
+  }
+ 
+.clu h1{
+  padding-top: 35vh
+;
+}
+.col img{
+  height: 70vh;
+}
+.col{
+  width: 50%;
+  justify-content: right;
+}
+.clu{
+  width: 50%;
+}
+
+
+
+.menu-lateral {
+    width: 250px;
+    height: 100%;
+    background-color: #507f52;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Ocultar el menú inicialmente */
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-lateral.abierto {
+    left: 0; /* Mostrar el menú */
+}
+
+
+
+/*para el footer*/
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    footer {
+      background: linear-gradient(135deg, #FFB22C 0%, #F3C623 100%);
+      color: #537D5D;
+      padding: 48px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .footer-section {
+      flex: 1 1 280px;
+      min-width: 280px;
+    }
+    .footer-title {
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      color:#D2D0A0;
+    }
+    .contact-info,
+    .sales-info {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .contact-info a,
+    .sales-info a {
+      color: #D2D0A0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover,
+    .sales-info a:hover {
+      color: #c7c07f;
+      text-decoration: underline;
+    }
+    .contact-item {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .material-icons {
+      font-size: 20px;
+      color: #c7c07f;
+      flex-shrink: 0;
+    }
+    @media (max-width: 640px) {
+      footer {
+        flex-direction: column;
+        padding: 32px 16px;
+        gap: 24px;
+      }
+      .footer-section {
+        min-width: auto;
+      }
+    }
+
+
+
+
+    /*MEDIDAD QUERIES*/
+    /*panalla muy pequeña*/
+    @media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Reducir el tamaño de fuente para móviles */
+    }
+
+    .enca {
+        flex-direction: column; /* Cambiar a columna para mejor visualización */
+        height: auto; /* Ajustar la altura */
+    }
+
+    .men {
+        font-size: 20px; /* Reducir el tamaño de fuente del menú */
+    }
+
+    .titu {
+        font-size: 24px; /* Ajustar el tamaño del título */
+    }
+
+    .con {
+        padding: 40px; /* Reducir el padding en la sección principal */
+    }
+
+    .col {
+        width: 100%; /* Hacer que la columna ocupe el 100% del ancho */
+    }
+
+    .tarjeta-danza {
+        flex-direction: column; /* Cambiar a columna para tarjetas de danza */
+    }
+
+    .info-danza {
+        max-width: 100%; /* Asegurar que la información de danza ocupe el 100% */
+    }
+
+    .boton-mas {
+        padding: 0.5rem 1rem; /* Ajustar el tamaño del botón */
+    }
+
+    .banner h1 {
+        font-size: 1.5rem; /* Ajustar el tamaño del texto en el banner */
+    }
+}
+
+
+/*pantalla pequeña*/
+@media (max-width: 900px) {
+    body {
+        font-size: 18px; /* Ajustar el tamaño de fuente para tabletas */
+    }
+
+    .enca {
+        height: auto; /* Ajustar la altura del encabezado */
+    }
+
+    .con {
+        padding: 60px; /* Ajustar el padding en la sección principal */
+    }
+
+    .tarjeta-danza {
+        flex-direction: column; /* Cambiar a columna para tarjetas de danza */
+    }
+
+    .info-danza {
+        max-width: 80%; /* Asegurar que la información de danza ocupe el 80% */
+    }
+
+    .boton-mas {
+        padding: 0.5rem 1rem; /* Ajustar el tamaño del botón */
+    }
+
+    .banner h1 {
+        font-size: 1.8rem; /* Ajustar el tamaño del texto en el banner */
+    }
+}

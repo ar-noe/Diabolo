@@ -1,0 +1,245 @@
+/*diseño para toda la página*/
+body{
+    display:grid;
+    grid-template-columns: 5fr 4fr;
+    margin:0;
+    font-family: 'Questrial', sans-serif;
+    color: #537D5D;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 25px;
+}
+
+/*seccion del formulario, parte izquierda*/
+main{
+    background-color: #D1D8BE;
+    padding: 5%;
+}
+#logMenu img{
+    height: 45px;
+    width: 45px;
+    align-self:flex-start;
+}
+main div{
+    display: grid;
+}
+#logTitulo{
+    justify-content: center;
+    margin: 0;
+}
+#logMenu{
+    justify-content: left;
+}
+ /*formulario specifically D:*/
+#logForms{
+    width: 65%;
+    text-align: left;
+    margin: auto 10% auto 10%;
+    justify-self: center;
+}
+input{
+    height: 10%;
+    width: 100%;
+    border-color: #537D5D;
+    border-radius: 5px;
+}
+#btnRegistro{
+    background-color: #F3C623;
+    color: #537D5D;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8%;
+    width: 30%;
+    margin: 30px auto 0 auto;
+    padding:  10px 20px;
+}
+#btnRegistro a{
+    text-decoration: none;
+    color: #537D5D;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8%;
+    width: 30%;
+    margin: 30px auto 0 auto;
+}
+#btnRegistro:hover{
+    background-color: #a8a780;
+    color: #D2D0A0;
+    cursor:pointer;
+}
+#btnRegistro a:hover{
+    color: #D2D0A0;
+}
+
+
+/*parte gráfica, mitad derecha*/
+aside{
+    background-color: #A7C1A8;
+}
+aside div{
+    display: grid;
+}
+/*imagen oso se vuelve absoluta*/
+#logOso{
+    align-items: end;
+}
+#logOso img{
+    position: absolute;
+    overflow: visible;
+    height: 90vh;
+    width: 30%;
+    align-self: flex-end;
+    top: 9%;
+    left : 65%;
+}
+#logConfeti{/*posicion de confetti*/
+    display: grid;
+    justify-content: end;
+        height: 80vh;
+    align-items: end;
+}
+#logConfeti img{
+    overflow:hidden;
+    height: 30%;
+    width: 400px;
+}
+
+
+/*configuracion del menu interacttivo*/
+#menuContent {
+    background-color: #537D5D; 
+    position: absolute; 
+    z-index: 1;
+    margin:-40px;
+    border-radius: 5px;
+    color: #D2D0A0;
+    height: 100vh;
+    width: 20%;
+    border-radius: 0;
+}
+#menuContent ul {
+    list-style-type: none; 
+    padding-top: 80px;
+}
+#menuContent li {
+    margin: 5px 0; 
+}
+/*icono para menu*/
+#logMenBtn{
+    position: absolute; 
+    z-index: 2;
+}
+a{
+    color:#D1D8BE;
+    text-decoration: none;
+}
+/*alternativo*/
+#logMenBtnAlt{
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    left: 40px;
+}
+
+
+/*MEDIDAD QUERIES*/
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        height: auto; /* Ajustar la altura */
+    }
+
+    h1 {
+        font-size: 28px; /* Reducir el tamaño del título principal */
+    }
+
+    h2 {
+        font-size: 20px; /* Reducir el tamaño de los subtítulos */
+    }
+
+    #logForms {
+        width: 90%; /* Hacer que el formulario ocupe el 90% del ancho */
+        margin: auto; /* Centrar el formulario */
+    }
+
+    #btnRegistro {
+        width: 100%; /* Hacer que el botón ocupe el 100% del ancho */
+    }
+
+    #logOso img {
+        
+         display: none; /*ocultar imagen*/
+    }
+
+    #logConfeti img {
+       
+         display: none; /*ocultar imagen*/
+    }
+
+    #menuContent {
+        width: 100%; /* Hacer que el menú ocupe el 100% del ancho */
+        height: auto; /* Ajustar la altura del menú */
+        position: relative; /* Cambiar la posición a relativa */
+        margin: 0; /* Eliminar márgenes */
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        height: auto; /* Ajustar la altura */
+        background-color: #D1D8BE;/*reemplazar espacio de aside*/
+    }
+
+    h1 {
+        font-size: 32px; /* Ajustar el tamaño del título principal */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño de los subtítulos */
+    }
+
+    #logForms {
+        width: 80%; /* Hacer que el formulario ocupe el 80% del ancho */
+        margin: auto; /* Centrar el formulario */
+    }
+
+    #btnRegistro {
+        width: 100%; /* Hacer que el botón ocupe el 100% del ancho */
+    }
+
+    #logOso img {
+        height: 30vh; /* Ajustar la altura de la imagen */
+        width: auto; /* Mantener la proporción de la imagen */
+        top: 2%;
+        left : 70%;
+        display:block;
+    }
+
+    #logConfeti img {
+
+         display: none; /*ocultar imagen*/
+    }
+
+    #menuContent {
+        width: 80%; /* Hacer que el menú ocupe el 80% del ancho */
+        height: auto; /* Ajustar la altura del menú */
+        position: relative; /* Cambiar la posición a relativa */
+        margin: 0; /* Eliminar márgenes */
+    }
+    aside{
+        background-color: #D1D8BE;/*elimirar aside sin borrar al oso*/
+        padding: 0;
+        margin: 0;
+        height: 0;
+    }
+}

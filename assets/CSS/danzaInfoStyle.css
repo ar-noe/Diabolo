@@ -1,0 +1,431 @@
+/*valores pre establecidos de todo el docuemnto*/
+body {
+    background-color: #FFFFFF;
+    font-family: 'Questrial', sans-serif;
+    /*para parrafos*/
+    font-size: 20px;
+    color: #537D5D;
+}
+
+h1 {
+    color: #F3C623;
+    font-family: 'Poppins', sans-serif;
+    height: 10vh;
+    margin: 0;
+    font-weight: bold;
+}
+
+h2 {
+    color: #F3C623;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*para la configuracion del primer apartado, descripcion general*/
+#tituloDanza {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 30px;
+}
+
+#descOrder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 50px 100px 50px;
+    margin: 50px 0px 0px 0px;
+    height: auto;
+    background-color: #EEEFE0;
+}
+
+#imgDescSize {
+    height: 90%;
+    width: 80%;
+    justify-self: right;
+    align-self: center;
+}
+
+#txtDescAlg {
+    align-self: center;
+    margin: 20px 100px;
+    color: #819A91;
+    text-align: center;
+}
+
+/*diseño del apartado de historia*/
+#hstApartado {
+    background-color: #ecdc84;
+    padding: 40px;
+}
+
+#hstTitulo {
+    color: #537D5D;
+}
+
+#imgOrder {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 2%;
+}
+
+#imgOrder img {
+    height: 100%;
+    width: 100%;
+}
+
+#txtHstAlg {
+    margin: 50px 60px;
+    padding: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+/*para la parte de los trajes, configuracion básica*/
+#trjApartado {
+    margin: 100px 50px;
+}
+
+/*para cada tarjeta*/
+.trajAlg {
+    margin: 40px 150px;
+    background-color: #819A91;
+    color: #EEEFE0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.trajAlg2 {
+    margin: 40px 150px;
+    background-color: #819A91;
+    color: #EEEFE0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.imgTrajSize {
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+}
+
+.txtTraj {
+    margin: 10%;
+}
+
+.titTraj {
+
+    color: #EEEFE0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+
+
+}
+
+
+/*para imagen sobresalga*/
+#spdSpace {
+    height: 5vh;
+    padding: 0 15%;
+    display: grid;
+    justify-content: right;
+    align-items: flex-start;
+    grid-template-columns: 3fr 1fr;
+}
+
+/*texto*/
+#spdInfo {
+    background-color: #D1D8BE;
+    margin: 5% 0 7% 0;
+    padding: 0 20% 2% 20%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: end;
+    justify-items: center;
+    text-align: end;
+}
+
+#spdSpace div img {
+    overflow: visible;
+    height: 150%;
+    justify-self: end;
+    width: 250px;
+}
+
+/*detalle boton*/
+button {
+    background-color: #D2D0A0;
+    color: #537D5D;
+    border: none;
+    border-radius: 25%;
+    padding: 25px 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover{
+        background-color: #FFB22C;
+    color: #819A91;
+    cursor:pointer;
+}
+
+
+
+#tituloDanza{
+text-align: center;
+align-content: center;
+justify-content: center;
+height: 10vh;
+font-size: 30px;
+}
+
+/*confirmar config*/
+#descOrder{
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 100px 50px 100px 50px;
+margin: 50px 0px 0px 0px;
+background-color: #EEEFE0;
+}
+
+#imgDescSize{
+height: 90%;
+width: 80%;
+justify-self: right;
+align-self: center;
+}
+#txtDescAlg{
+align-self: center;
+margin: 20px 100px;
+color: #819A91;
+text-align: center;
+}
+
+
+#hstApartado{
+background-color: #ecdc84;
+padding: 40px;
+}
+#hstTitulo{
+  color: #537D5D;
+}
+#imgOrder{
+display: grid;
+grid-template-columns: auto auto;
+justify-content: center;
+column-gap: 2%;
+}
+#imgOrder img{
+  height: 100%;
+  width: 100%;
+}
+#txtHstAlg{
+  margin: 50px 60px;
+  padding: 100px;
+  text-align: center;
+  align-self: center;
+}
+
+
+#trjApartado{
+  margin: 100px 50px;
+}
+.trajAlg{
+  margin: 40px 150px;
+  background-color: #819A91;
+  color: #EEEFE0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+}
+.trajAlg2{
+  margin: 40px 150px;
+  background-color: #819A91;
+  color: #EEEFE0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+.imgTrajSize{
+  height: 40vh;
+  align-self: center;
+  justify-self: center;
+}
+.txtTraj{
+  margin: 10%;
+}
+
+
+#spdSpace{
+  height: 5vh;
+  padding: 0 15%;
+  display: grid;
+  justify-content: right;
+  align-items: flex-start;
+  grid-template-columns: 3fr 1fr;
+}
+#spdInfo{
+  background-color: #D1D8BE;
+  margin: 5% 0 7% 0 ;
+  padding: 0 20% 2% 20%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: end;
+  justify-items: center;
+  text-align: end;
+}
+#spdSpace div img{
+  overflow: visible;
+  height: 150%;
+  justify-self: end;
+  width: 300px;
+}
+button{
+  background-color: #D2D0A0;
+  color: #537D5D;
+  border: none;
+  border-radius: 25%;
+  padding: 25px 45px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/*asegurar que ocupe toda la pantalla verticalmente*/
+main{
+  height: 100vh;
+  position: relative;
+top: 0;
+}
+
+aside{
+  background-color: #819A91;
+  position: fixed;
+  width: 30%;
+height: 100vh;
+border: 30px;
+padding: 40px 0 0;
+}
+aside nav ul{
+  list-style-type: none;
+}
+aside nav ul li a{
+  text-decoration: none;
+  font-family: 'Questrial', sans-serif;
+  color: #EEEFE0;
+}
+aside nav ul li a:hover{
+  color: #F3C623;
+}
+
+
+/*menu asegurar posicion*/
+.menu-lateral {
+    width: 250px;
+    height: 100%;
+    background-color: #507f52;
+    position: fixed;
+    top: 0;
+    left: -250px; /* esconder el menu */
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+
+
+/*MEDIDAD QUERY*/
+
+/*pantalla más pequeña*/
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Reducir el tamaño de fuente para móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajustar el tamaño del título principal */
+    }
+
+    h2 {
+        font-size: 30px; /* Ajustar el tamaño de los subtítulos */
+    }
+
+    #descOrder {
+        padding: 50px 20px; /* Reducir el padding en la sección de descripción */
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    #imgDescSize {
+        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .trajAlg, .trajAlg2 {
+        margin: 20px 10px; /* Reducir el margen de las tarjetas de trajes */
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    
+
+    button {
+        padding: 15px 30px; /* Reducir el tamaño del botón */
+        font-size: 16px; /* Ajustar el tamaño de fuente del botón */
+    }
+}
+
+
+
+/*pantalla pequeña*/
+@media (max-width: 900px) {
+    body {
+        font-size: 18px; /* Ajustar el tamaño de fuente para tabletas */
+    }
+
+    h1 {
+        font-size: 28px; /* Ajustar el tamaño del título principal */
+    }
+
+    h2 {
+        font-size: 40px; /* Ajustar el tamaño de los subtítulos */
+    }
+
+    #descOrder {
+        padding: 80px 30px; /* Ajustar el padding en la sección de descripción */
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    #imgDescSize {
+        width: 90%; /* Hacer que la imagen ocupe el 90% del ancho */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .trajAlg, .trajAlg2 {
+        margin: 30px 20px; /* Ajustar el margen de las tarjetas de trajes */
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+    #spdSpace div img{
+  
+  height: 150%;
+  justify-self: end;
+  width: 100px;
+}
+
+    button {
+        padding: 20px 35px; /* Ajustar el tamaño del botón */
+        font-size: 18px; /* Ajustar el tamaño de fuente del botón */
+    }
+}
+
+

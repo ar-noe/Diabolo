@@ -1,0 +1,164 @@
+/*asegurarse que el menu interactivo funcione*/
+.menu-lateral {
+    width: 250px;
+    height: 100%;
+    background-color: #507f52;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* para ocultar el menu supongo :c */
+    transition: left 0.3s ease;
+    z-index: 1000;
+    margin: 0;
+
+}
+
+/*configuraciones iniciales*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEFE0;
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin: 5%;
+}
+
+/*color del fondo*/
+.form-container {
+    background-color: #819A91;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: auto;
+}
+
+form{
+    background-color: #ffffff;
+    padding: 2%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #EEEFE0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+input[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left:10%;
+
+}
+
+input[type="submit"] {
+    background-color: #D2D0A0;
+    color: #819A91;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #F3C623;
+}
+
+.product-container {
+    margin-bottom: 15px;
+}
+
+.remove-product {
+    color: #819A91;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#addProduct{
+    margin-bottom: 5%;
+}
+
+
+/*MEDIDAS QUERIES*/
+
+@media (max-width: 600px) {
+    .menu-lateral {
+        width: 100%; /* Hacer que el menú ocupe el 100% del ancho */
+        left: -100%; /* Ocultar el menú inicialmente */
+    }
+
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente para móviles */
+    }
+
+    .factura-container {
+        padding: 5%; /* Aumentar el padding en la factura para móviles */
+        margin: 5% auto; /* Ajustar el margen */
+    }
+
+    h2 {
+        font-size: 24px; /* Reducir el tamaño del título */
+    }
+
+    table {
+        font-size: 12px; /* Reducir el tamaño de fuente de la tabla */
+    }
+
+    th, td {
+        padding: 8px; /* Reducir el padding en las celdas de la tabla */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .menu-lateral {
+        width: 80%; /* Hacer que el menú ocupe el 80% del ancho */
+        left: -80%; /* Ocultar el menú inicialmente */
+    }
+
+    body {
+        font-size: 16px; /* Ajustar el tamaño de fuente para tabletas */
+    }
+
+    .factura-container {
+        padding: 4%; /* Ajustar el padding en la factura */
+        margin: 4% auto; /* Ajustar el margen */
+    }
+
+    h2 {
+        font-size: 28px; /* Ajustar el tamaño del título */
+    }
+
+    table {
+        font-size: 14px; /* Ajustar el tamaño de fuente de la tabla */
+    }
+
+    th, td {
+        padding: 10px; /* Mantener el padding en las celdas de la tabla */
+    }
+}
+
+
+
+

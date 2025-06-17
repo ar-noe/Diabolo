@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- Scripts para funcionalidades específicas -->
+    <script src="./assets/JS/dropMenu.js" defer></script>
+    <script src="./assets/JS/indexDanzasLinks.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Estilos -->
+    <title>Diabolo</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="icon" href="./img/logo.png">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Questrial&display=swap" </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+<body>
+
+    <header class="enca"> <!-- Encabezado de la página -->
+        <div class="men"> <img id="ImgLgMenu" src="./assets/img/lista (1).png" alt="&#9776;"> </div>
+        <div class="titu">Diabolo</div>
+    </header>
+    <nav id="menu" class="menu-lateral"> <!-- Menú lateral de navegación interactivo -->
+        <ul>
+            <li><a href="./index.html#Festividades">Festividades</a></li>
+            <li><a href="./index.html#Danzas">Danzas</a></li>
+            <li><a href="./apartadoVenta.html">Comprar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="con"> <!-- Contenedor de primera seccion, presentación nombre y logo -->
+            <div class="col">
+                <img src="./assets/img/logInOso.png" alt="Imagen principal" />
+            </div>
+            <div class="clu">
+                <h1>Diabolo</h1>
+                <img id="imgMargin" src="./assets/img/imagen2.jpg" alt="Imagen secundaria" class="oso" />
+            </div>
+        </div>
+
+        <section class="danza-section" id="Danzas">  <!-- Sección de danzas -->
+            <h2 class="titulo-seccion">DANZAS</h2> <!-- Título de la sección de danzas -->
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Diablada</h3> <!-- Nombre de la danza -->
+                    <p class="descripcion">La Diablada es una danza que forma parte del Carnaval de Oruro, Bolivia, y
+                        fue declarada
+                        Patrimonio Cultural de Bolivia en 2011.</p> <!-- Descripción -->
+                    <button id="btnDiablada" class="boton-mas">MÁS</button> <!-- Botón para más información, ir a la pagina de la danza -->
+                </div>
+                <img src="./assets/img/oso.jpg" alt="Diablada" class="imagen-danza" /> <!-- Imagen de la danza -->
+<!-- Más tarjetas de danzas aquí... -->
+            </div>
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Caporal</h3>
+                    <p class="descripcion">Los caporales es una danza folklorica de bolivia post – hispánica, cuyas
+                        raíces están
+                        totalmente ligadas a el baile de la Saya, el baile de la Saya lo practican los afrobolivianos
+                        que
+                        habitan en la región de los Yungas de La Paz</p>
+                    <button id="btnCaporal" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/cholita.jpg" alt="Caporal" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Morenada</h3>
+                    <p class="descripcion">La danza Morenada (danza de los Morenos) es un baile boliviano que tiene su
+                        raíz en la minería, es una danza 100% boliviana. </p>
+                    <button id="btnMorenada" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/co.jpg" alt="Morenada" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Tobas</h3>
+                    <p class="descripcion">La danza de los Tobas es una danza folclórica boliviana, creada en la ciudad
+                        de Oruro a inicios del siglo XX.</p>
+                    <button id="btnTobas" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/tobas.jpg" alt="Tobas" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Kullawada</h3>
+                    <p class="descripcion">La Kullawada, kullahuada, cullaguada o kullawa es una danza que se practica
+                        en Bolivia.</p>
+                    <button id="btnKullawada" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/ku (2).jpg" alt="Kullawada" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Tinku</h3>
+                    <p class="descripcion">l Tinku es un ritual y una danza folklórica de Bolivia, practicado en algunos
+                        pueblos del norte del departamento de Potosí y del sur del departamento de Oruro.</p>
+                    <button id="btnTinku" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/ti.jpg" alt="Tinku" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Waca Waca</h3>
+                    <p class="descripcion">Esta danza al parecer tiene sus orígenes en la corrida de toros, que se
+                        convierte en una
+                        forma de mostrar el poder del hombre, en este caso del español, el cual derrota a la fuerza
+                        bruta
+                        representada por el toro.</p>
+                    <button id="btnWacaWaca" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/wac.jpg" alt="Waca Waca" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Saya</h3>
+                    <p class="descripcion">La Saya Afroboliviana es una danza, canto y expresión musical tradicional del
+                        pueblo
+                        afroboliviano, originaria de los Yungas del departamento de La Paz, Bolivia. </p>
+                    <button id="btnSaya" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/sa.jpg" alt="Saya" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Llamerada</h3>
+                    <p class="descripcion">La Llamerada es una de las danzas más antiguas del folklore boliviano;
+                        pertenece en sus
+                        orígenes a la nación Aymara. Su nombre original en idioma aymara “KARWANI”. </p>
+                    <button id="btnLlamerada" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/lla.jpg" alt="Llamerada" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Pujllay</h3>
+                    <p class="descripcion">La danza pujllay tiene su origen en las comunidades y pueblos de la cultura
+                        Yampara, místicamente fusionada con los legados de la historia, que muestran la combinación de
+                        lo indígena y colonial.</p>
+                    <button id="btnPujllay" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/descargar.jpg" alt="Pujllay" class="imagen-danza" />
+            </div>
+
+            <div class="tarjeta-danza">
+                <div class="info-danza">
+                    <h3>Taquirari</h3>
+                    <p class="descripcion">El Taquirari es una danza y género musical tradicional del oriente boliviano,
+                especialmente representativo de los departamentos de Beni, Santa Cruz y parte de Pando.</p>
+                    <button id="btnTaquirari" class="boton-mas">MÁS</button>
+                </div>
+                <img src="./assets/img/TaquirariIndex-removebg-preview.png" alt="Pujllay" class="imagen-danza" />
+            </div>
+            <!-- fin seccion de danzas aquí... -->
+        </section>
+
+        <section id="Festividades"> <!-- Sección de festividades -->
+            <div class="banner">
+                <h1>Festividades</h1><!-- Título de la sección de festividades -->
+            </div>
+            <div class="cards-container"> <!-- Contenedor de tarjetas de festividades -->
+                <div class="card" data-titulo="Oruro Festividad"> <!-- tarjetas de festividades -->
+                    <img src="./assets/img/oruro.jpg" alt="Oruro" />
+                    <div class="titulo">Oruro Festividad</div>
+                </div>
+                <div class="card" data-titulo="Corso de Corso Festividad">
+                    <img src="./assets/img/corso.jpg" alt="Corso" />
+                    <div class="titulo">Corso de Corso Festividad</div>
+                </div>
+                <div class="card" data-titulo="Gran Poder">
+                    <img src="./assets/img/GRAN.jpg" alt="Gran Poder" />
+                    <div class="titulo">Gran Poder</div>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="card" data-titulo="Virgen del Carmen">
+                    <img src="./assets/img/carm.jpg" alt="Virgen del Carmen" />
+                    <div class="titulo">Virgen del Carmen</div>
+                </div>
+                <div class="card" data-titulo="Virgen de Urkupiña">
+                    <img src="./assets/img/urku.jpg" alt="Virgen de Urkupiña" />
+                    <div class="titulo">Virgen de Urkupiña</div>
+                </div>
+                <div class="card" data-titulo="Chutillos">
+                    <img src="./assets/img/chu.jpg" alt="Chutillos" />
+                    <div class="titulo">Chutillos</div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+<!-- footer -->
+      <footer>
+    <section class="footer-section contact-info">
+      <h2 class="footer-title">Contacto</h2>
+      <div class="contact-item">
+        <span class="material-icons" aria-hidden="true">location_on</span>
+        <address>Av. Bolivia 1234, La Paz, Bolivia</address>
+      </div>
+      <div class="contact-item">
+        <span class="material-icons" aria-hidden="true">phone</span>
+        <a href="tel:+59112345678" aria-label="Número de teléfono">+591 123 45678</a>
+      </div>
+      <div class="contact-item">
+        <span class="material-icons" aria-hidden="true">email</span>
+        <a href="mailto:info@danza-bolivia.bo" aria-label="Correo electrónico">info@danza-bolivia.bo</a>
+      </div>
+      <div class="contact-item">
+        <span class="material-icons" aria-hidden="true">public</span>
+        <a href="https://www.danza-bolivia.bo" target="_blank" rel="noopener noreferrer" aria-label="Sitio web oficial">www.danza-bolivia.bo</a>
+      </div>
+    </section>
+
+    <section class="footer-section sales-info">
+      <h2 class="footer-title">Ventas</h2>
+      <p>Para compras de trajes y accesorios típicos, contáctanos:</p>
+      <div class="contact-item">
+        <span class="material-icons" aria-hidden="true">shopping_cart</span>
+        <a href="mailto:ventas@danza-bolivia.bo" aria-label="Correo electrónico de ventas">ventas@danza-bolivia.bo</a>
+      </div>
+      <div class="contact-item">
+        <span class="material-icons" aria-hidden="true">phone</span>
+        <a href="tel:+59198765432" aria-label="Teléfono ventas">+591 987 65432</a>
+      </div>
+      <p>Horario de atención:</p>
+      <ul>
+        <li>Lunes a Viernes: 09:00 - 18:00</li>
+        <li>Sábados: 10:00 - 14:00</li>
+      </ul>
+    </section>
+  </footer>
+
+
+
+</body>
+
+</html>

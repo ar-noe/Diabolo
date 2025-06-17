@@ -1,0 +1,111 @@
+/*configuraciones generales*/
+body{
+    margin:0;
+    background-color: #FFFFFF;
+    font-family: 'Questrial', sans-serif; /*para parrafos*/
+    font-size: 15px;
+    color: #EEEFE0;
+}
+main{
+    margin: 30px 0 30px 70px;
+    background-color: #A7C1A8;
+}
+
+h1{
+    color: #F3C623;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: end;
+}
+
+/*descripcion del producto*/
+#trjMuestraC{
+    padding: 5% 7% 5% 3%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    column-gap: 5%;
+    height: 80vh;
+}
+#trjMuestraC div{
+    justify-content: center;
+}
+#trjImgCenter{
+    justify-self: center;
+    align-self: center;
+}
+#trjMuestraC div img {
+    height: 45vh;
+    width: 100%;
+}
+button{
+    color: #537D5D;
+    background-color: #F3C623;
+    border:none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+hr{
+    border-color: #F3C623;
+    color: #F3C623;
+    width: 70%;
+}
+
+/*recomendaciones de trajes o productos*/
+#trjRecs{
+    padding: 2% 7% 5% 3%;
+}
+h2{
+    color: #537D5D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#recsOrder{
+    margin: 0 0 0 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#recsOrder img{
+    width: 40vh;
+    height: 40vh;
+    align-self: center;
+    justify-self: center;
+    background-color: #EEEFE0;
+}
+#RecsTitle{
+    color:#537D5D;
+    text-align: left;
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color: #FFB22C;
+    color: #819A91;
+    cursor:pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #537D5D;
+}
+
+.menu-lateral {
+    width: 250px;
+    height: 100%;
+    background-color: #507f52;
+    position: fixed;
+    top: 0;
+    left: -250px; /* This hides the menu */
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+#trjMuestraC div div{
+    height: 30%;
+    align-content: center;
+}

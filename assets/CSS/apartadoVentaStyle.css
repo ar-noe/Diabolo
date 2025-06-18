@@ -196,3 +196,18 @@ body {
        transition: all 0.3s ease;
    }
    
+
+
+   /*MEDIDAS QUERIES*/
+
+   /*pantalla pequeña*/
+@media (max-width: 756px) {
+    body {
+        font-size: 18px; /* Ajustar el tamaño de fuente*/
+    }
+    .danzaSec{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4%;
+}
+}

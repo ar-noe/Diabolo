@@ -25,7 +25,6 @@ h1{
     display: grid;
     grid-template-columns: 2fr 4fr;
     column-gap: 5%;
-    height: 80vh;
 }
 #trjMuestraC div{
     justify-content: center;
@@ -46,6 +45,7 @@ button{
     padding: 10px 20px;
     font-size: 15px;
     font-weight: bold;
+    margin: 0;
 }
 
 
@@ -109,3 +109,43 @@ button a{
     height: 30%;
     align-content: center;
 }
+
+
+/*MEDIDAS QUERIES*/
+
+@media (max-width: 756px) {
+    body {
+        font-size: 18px; /* Ajustar el tamaño de fuente */
+    }
+    #trjMuestraC{
+    padding: 5% 7% 5% 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2%;
+    justify-content: center;
+    }
+    #trjMuestraC div div{
+    height: 30%;
+    margin: 2% 0;
+    font-size:35px;
+    align-content: center;
+    text-align:center;
+    }
+        #trjMuestraC div div p{
+
+    font-size:20px;
+    align-content: center;
+    text-align:center;
+    }
+    #recsOrder{
+    margin: 0 0 0 7%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#trjMuestraC div{
+    height: 100vh;
+}
+#trjImgCenter{
+    height: 50vh;
+}
+}   
